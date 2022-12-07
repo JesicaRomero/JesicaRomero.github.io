@@ -18,6 +18,7 @@ body {
 
 .effect3D {
   text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+  letter-spacing: 0.08em;
 }
 
 .layout {
