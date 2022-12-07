@@ -1,0 +1,61 @@
+.content-description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#content-description-introduction {
+    padding: 60px;
+    text-align: justify;
+    width: 100%;
+    font-size: 40px;
+}
+
+.content-logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#xl-logo {
+    text-align: center;
+    font-size: 700px;
+    color: #fff;
+    width: 100%;
+    transform: rotate(-20deg);
+    animation-duration: 2s;
+    animation-name: rotateLogo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotateLogo {
+    from {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+@media (max-width: 1500px) {
+    #content-description-introduction {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+    #content-description-introduction {
+        text-align: center;
+        font-size: 50px;
+        padding: 0;
+    }
+    #xl-logo {
+        font-size: 400px;
+    }
+}
